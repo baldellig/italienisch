@@ -28,8 +28,15 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-    color: #E2E2BC;
+    color: #4A472A;
 }
+
+.text-vertical-center h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #4A472A;
 
 /* Custom Button Styles */
 
