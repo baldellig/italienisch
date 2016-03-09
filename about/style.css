@@ -164,7 +164,7 @@ h2 {
 }
 
 .aboutme{
-	background-color: #F57F17;
+	background-color: #45652C;
 	color: #fafafa;
 	overflow: auto;
 	box-shadow: inset 0 20px 20px -20px #000000;;
@@ -179,7 +179,7 @@ h2 {
 }
 
 .skills{
-	background-color: #BF360C;
+	background-color: #E2E2BC;
 	color: #fafafa;
 	box-shadow: inset 0 20px 20px -20px #000000;;
 }
@@ -189,7 +189,7 @@ h2 {
 }
 
 .contact{
-	background-color: #0cbf92;
+	background-color: #a94442;
 	color: #fafafa;
 	box-shadow: inset 0 20px 20px -20px #000000;;
 }
