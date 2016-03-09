@@ -162,18 +162,21 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    box-shadow: inset 0 20px 20px -20px #000000
 }
 
 /* About */
 
 .about {
     padding: 50px 0;
+    box-shadow: inset 0 20px 20px -20px #000000
 }
 
 /* Services */
 
 .services {
     padding: 50px 0;
+    box-shadow: inset 0 20px 20px -20px #000000
 }
 
 .service-item {
@@ -192,12 +195,14 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    box-shadow: inset 0 20px 20px -20px #000000;
 }
 
 /* Portfolio */
 
 .portfolio {
     padding: 50px 0;
+    box-shadow: inset 0 20px 20px -20px #000000
 }
 
 .portfolio-item {
@@ -216,6 +221,7 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+    box-shadow: inset 0 20px 20px -20px #000000
 }
 
 .call-to-action .btn {
