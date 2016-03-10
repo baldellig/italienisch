@@ -38,6 +38,10 @@ h2 {
   margin-top: 1em;
 }
 
+li{
+  list-style: none;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -215,6 +219,7 @@ body {
 }
 
 #container {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -308,4 +313,5 @@ body {
   background: #BF0000;
 }
 #container .frame.premium .price, #container .frame.premium .per, #container .frame.premium .purchase {
-  colo
+  color: #BF0000;
+}
