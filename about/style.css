@@ -262,7 +262,6 @@ body {
   line-height: 50px;
 }
 #container .frame .inset .price sup {
-  position: absolute;
   top: -10px;
   font-size: 14pt;
   line-height: normal;
