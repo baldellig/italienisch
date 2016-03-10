@@ -197,3 +197,115 @@ h2 {
 .contact .sectiontitle{
 	color: #fafafa;
 }
+
+/*
+Prices
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif); // BODY FONT
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One); // TITLE
+
+$bg: #FFF; $font: #AAA; $price: #AFDE45;
+$basic: #83BF00; $normal: #0056BF; $premium: #BF0000;
+$radius: 5px;
+
+body {
+  background: #E5E5E5;
+  font-family: 'Bree Serif', serif;
+  font-size: 10pt;
+  color: $font;
+  line-height: normal;
+  text-align: center;
+  font-smoothing: antialiased;
+}
+
+// CONTAINER
+#container {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  max-width: 800px;
+  padding: 25px; margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  // FRAME
+  .frame {
+    flex: 1 175px;
+    margin: 5px;
+    border-radius: $radius;
+    background: $bg;
+    overflow: hidden;
+    // TITLE
+    .title {
+      height: 60px;
+      padding: 0 10px;
+      display: block;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 25pt;
+      color: $bg;
+      font-weight: bold;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+    // INSET
+    .inset {
+      padding: 15px;
+      // PRICE
+      .price {
+        height: 50px;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 25pt;
+        font-weight: bold;
+        line-height: 50px;
+        sup {
+          position: relative;
+          top: -10px;
+          font-size: 14pt;
+          line-height: normal;
+        }
+      }
+      .per {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .desc { margin-top: 15px; }
+    }
+    // DATA
+    .data {
+      padding: 5px;
+      color: $bg;
+      li { margin: 10px; } 
+    }
+    // PURCHASE BUTTON
+    .purchase {
+      cursor: pointer;
+      width: 100%; height: 50px;
+      padding: 0; margin: 0;
+      outline: 0; border: 0;
+      background: transparent;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 15pt;
+      font-weight: bold;
+      line-height: 50px;
+      font-smoothing: antialiased;
+    }
+    // BASIC COLOURS
+    &.basic {
+      .title, .data { background: $basic; }
+      .price, .per, .purchase { color: $basic; }
+    }
+    // NORMAL COLOURS
+    &.normal {
+      .title, .data { background: $normal; }
+      .price, .per, .purchase { color: $normal; }
+    }
+    // PREMIUM COLOURS
+    &.premium {
+      .title, .data { background: $premium; }
+      .price, .per, .purchase { color: $premium; }
+    }
+  }
+}
