@@ -52,56 +52,46 @@
 
 			<h2 class="sectiontitle">die Preise <i class="thin">i costi</i></h2>
 
-				<main id='container'>
-				  <!-- BASIC -->
-				  <fieldset class='frame basic'>
-				    <legand class='title'>Basic</legand>
-				    <ul class='inset'>
-				      <li class='price'><sup>$</sup>5</li>
-				      <li class='per'>Per Month</li>
-				      <li class='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-				    </ul>
-				    <ul class='data'>
-				      <li>1 Member</li>
-				      <li>10GB Storage</li>
-				      <li>Single Device</li>
-				      <li>Weekly Backups</li>
-				    </ul>
-				    <button class='purchase'>Buy Now</button>
-				  </fieldset>
-				  <!-- NORMAL -->
-				  <fieldset class='frame normal'>
-				    <legand class='title'>Normal</legand>
-				    <ul class='inset'>
-				      <li class='price'><sup>$</sup>25</li>
-				      <li class='per'>Per Month</li>
-				      <li class='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-				    </ul>
-				    <ul class='data'>
-				      <li>5 Member</li>
-				      <li>100GB Storage</li>
-				      <li>Single Device</li>
-				      <li>Daily Backups</li>
-				    </ul>
-				    <button class='purchase'>Buy Now</button>
-				  </fieldset>
-				  <!-- PREMIUM -->
-				  <fieldset class='frame premium'>
-				    <legand class='title'>Premium</legand>
-				    <ul class='inset'>
-				      <li class='price'><sup>$</sup>50</li>
-				      <li class='per'>Per Month</li>
-				      <li class='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-				    </ul>
-				    <ul class='data'>
-				      <li>25 Member</li>
-				      <li>2TB Storage</li>
-				      <li>Multiple Device</li>
-				      <li>Daily Backups</li>
-				    </ul>
-				    <button class='purchase'>Buy Now</button>
-				  </fieldset>
-				</main>
+%main#container
+    / BASIC
+    %fieldset.frame.basic
+        %legand.title Basic
+        %ul.inset
+            %li.price <sup>$</sup>5
+            %li.per Per Month
+            %li.desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        %ul.data
+            %li 1 Member
+            %li 10GB Storage
+            %li Single Device
+            %li Weekly Backups
+        %button.purchase Buy Now
+    / NORMAL
+    %fieldset.frame.normal
+        %legand.title Normal
+        %ul.inset
+            %li.price <sup>$</sup>25
+            %li.per Per Month
+            %li.desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        %ul.data
+            %li 5 Member
+            %li 100GB Storage
+            %li Single Device
+            %li Daily Backups
+        %button.purchase Buy Now
+    / PREMIUM
+    %fieldset.frame.premium
+        %legand.title Premium
+        %ul.inset
+            %li.price <sup>$</sup>50
+            %li.per Per Month
+            %li.desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        %ul.data
+            %li 25 Member
+            %li 2TB Storage
+            %li Multiple Device
+            %li Daily Backups
+        %button.purchase Buy Now
 			
 			</a>
 		</section>					
