@@ -4,6 +4,10 @@ Author URI: http://gerardcuadras.com
 Version: 0.1
 */
 
+@media screen and (max-width: 900px) {
+    p {
+        color: red;
+    }
 
 ul {
   list-style-type: none;
