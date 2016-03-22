@@ -4,9 +4,31 @@ Author URI: http://gerardcuadras.com
 Version: 0.1
 */
 
-@media screen and (max-width: 480px) {
-    p {
-        color: red;
+@media screen and (max-width: 956) {
+    text-left {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 956) {
+    .parent-left1 {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 956) {
+    .partent-right2 {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 956) {
+    text-right {
+        float: none;
+        width: 100%;
     }
 }
 
