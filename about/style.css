@@ -4,6 +4,73 @@ Author URI: http://gerardcuadras.com
 Version: 0.1
 */
 
+ul {
+  list-style-type: none;
+}
+
+.box{
+  width: auto;
+}
+
+.text-right {
+  float:right;
+  width: 70%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+
+.text-left {
+  float:left;
+  width: 70%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+.parent-left1 {
+  float: left;
+  margin: 30px auto;
+  background-image: url(../img/profile_small.jpg);
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  border: 2px #aaa solid;
+  border-radius: 100px;
+  transition: transform 0.2s cubic-bezier(0, 1.2, 1, 1.8);
+}
+.parent-left1:hover {
+  transform: scale(1.2, 1.2);
+  background: url(../img/profile_small.jpg), #e99;
+  background-size: 100px;
+  background-blend-mode: multiply, normal;
+  border: 2px #a55 solid;
+}
+.parent-left1:active {
+  transform: scale(0.8, 0.8);
+}
+
+.parent-right2 {
+  float: right;
+  margin: 30px auto;
+  margin-right: 30px;
+  background-image: url(../img/profile_small.jpg);
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  border: 2px #aaa solid;
+  border-radius: 100px;
+  transition: transform 0.2s cubic-bezier(0, 1.2, 1, 1.8);
+}
+.parent-right2:hover {
+  transform: scale(1.2, 1.2);
+  background: url(../img/profile_small.jpg), #e99;
+  background-size: 100px;
+  background-blend-mode: multiply, normal;
+  border: 2px #a55 solid;
+}
+.parent-right2:active {
+  transform: scale(0.8, 0.8);
+}
+
+
 * {
   margin: 0;
   padding: 0;
