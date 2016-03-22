@@ -5,7 +5,7 @@ Version: 0.1
 */
 
 @media screen and (max-width: 956) {
-    text-left {
+    .text-left {
         float: none;
         width: 100%;
     }
@@ -26,7 +26,7 @@ Version: 0.1
 }
 
 @media screen and (max-width: 956) {
-    text-right {
+    .text-right {
         float: none;
         width: 100%;
     }
