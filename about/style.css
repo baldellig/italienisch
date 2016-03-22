@@ -1,83 +1,120 @@
-/*
-Author: Gerard Cuadras
-Author URI: http://gerardcuadras.com
-Version: 0.1
-*/
-
-@media screen and (max-width: 900px) {
-    p {
-        color: red;
-    }
-
-ul {
-  list-style-type: none;
+h1.team-h1 {
+  margin: 0;
+  position: absolute;
+  top: -16px;
+  text-align: center;
+  left: 40%;
+  font-family: georgia;
+  font-style: italic;
+  background-color: white;
+  padding: 0px 20px;
+  color: #222; 
 }
 
-.p{
-  font-family: Arial;
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
-.box{
-  width: auto;
+.cf:after {
+    clear: both;
 }
 
-.text-right {
-  float:right;
-  width: 70%;
-  margin-right: 5%;
-  margin-bottom: 10%;
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
-.text-left {
-  float:left;
-  width: 70%;
-  margin-left: 5%;
-  margin-bottom: 10%;
+.team-container {
+  max-width: 1000px;
+  margin: auto;
+  border-top: 1px #e9e9e9 solid;
+  border-bottom: 1px #e9e9e9 solid;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin-top: 3em;
+  position: relative;
 }
-.parent-left1 {
+
+.team-member {
+  width: 16%;
   float: left;
-  margin: 30px auto;
-  background-image: url(../img/profile_small.jpg);
-  background-size: 100px;
-  width: 100px;
-  height: 100px;
-  border: 2px #aaa solid;
-  border-radius: 100px;
-  transition: transform 0.2s cubic-bezier(0, 1.2, 1, 1.8);
-}
-.parent-left1:hover {
-  transform: scale(1.2, 1.2);
-  background: url(../img/profile_small.jpg), #e99;
-  background-size: 100px;
-  background-blend-mode: multiply, normal;
-  border: 2px #a55 solid;
-}
-.parent-left1:active {
-  transform: scale(0.8, 0.8);
+  text-align: center;
+  margin-right: 5%;
 }
 
-.parent-right2 {
-  float: right;
-  margin: 30px auto;
-  margin-right: 30px;
-  background-image: url(../img/profile_small.jpg);
-  background-size: 100px;
-  width: 100px;
-  height: 100px;
-  border: 2px #aaa solid;
-  border-radius: 100px;
-  transition: transform 0.2s cubic-bezier(0, 1.2, 1, 1.8);
+.team-member:last-child {margin-right: 0;}
+
+
+.team-member span,
+.team-member h3 {
+  max-width: 200px;
+  font-family: sans-serif;
+  letter-spacing: -1px;
 }
-.parent-right2:hover {
-  transform: scale(1.2, 1.2);
-  background: url(../img/profile_small.jpg), #e99;
-  background-size: 100px;
-  background-blend-mode: multiply, normal;
-  border: 2px #a55 solid;
+
+.team-member h3 {
+  color: #1CA3A3;
 }
-.parent-right2:active {
-  transform: scale(0.8, 0.8);
+
+.email {
+  color: #EA2678;
+  
 }
+
+.team-member span {
+  display: block;
+ 
+}
+.team-photo {
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  transition: 0.1s transform ease-in-out;
+}
+
+
+.team-photo:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+/* code for phone layout */
+@media (max-width:850px){
+  .team-member {
+    width:25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+    
+  }
+  
+}
+
+
+
+@media (max-width:650px){
+  .team-member {
+    float: none;
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .team-member h3,
+  .team-member span {
+    margin: 15px auto;
+  }
+}
+
 
 
 * {
