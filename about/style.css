@@ -410,20 +410,20 @@ body {
   font-smoothing: antialiased;
 }
 #container .frame.basic .title, #container .frame.basic .data {
-  background: #83BF00;
+  background: #45652C;
 }
 #container .frame.basic .price, #container .frame.basic .per, #container .frame.basic .purchase {
-  color: #83BF00;
+  color: #45652C;
 }
 #container .frame.normal .title, #container .frame.normal .data {
-  background: #0056BF;
+  background: #5F5F4F;
 }
 #container .frame.normal .price, #container .frame.normal .per, #container .frame.normal .purchase {
-  color: #0056BF;
+  color: #5F5F4F;
 }
 #container .frame.premium .title, #container .frame.premium .data {
-  background: #BF0000;
+  background: #A94442;
 }
 #container .frame.premium .price, #container .frame.premium .per, #container .frame.premium .purchase {
-  color: #BF0000;
+  color: #A94442;
 }
