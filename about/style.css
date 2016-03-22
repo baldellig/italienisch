@@ -4,35 +4,6 @@ Author URI: http://gerardcuadras.com
 Version: 0.1
 */
 
-@media only screen and (max-width: 956) {
-    .text-left {
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-@media only screen and (max-width: 956) {
-    .parent-left1 {
-        float: none;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 956) {
-    .partent-right2 {
-        float: left;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 956) {
-    .text-right {
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
-}
 
 ul {
   list-style-type: none;
@@ -308,11 +279,10 @@ li{
 Prices
 */
 
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
 body {
   background: #E5E5E5;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Arial', serif;
   font-size: 10pt;
   color: #AAA;
   line-height: normal;
