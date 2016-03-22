@@ -42,7 +42,7 @@ h1.team-h1 {
 
 .team-member {
   width: 16%;
-  display: inline;
+  display: inline-block;
   text-align: center;
   margin-right: 5%;
 }
