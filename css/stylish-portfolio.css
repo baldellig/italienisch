@@ -6,6 +6,12 @@
 
 /* Global Styles */
 
+@media (max-width: 600px) {
+    #video-background {
+         display: none;
+    }
+}
+
 #video-background {
 /*  making the video fullscreen  */
   position: fixed;
