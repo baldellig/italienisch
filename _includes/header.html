@@ -1,8 +1,54 @@
 <header id="top" class="header">
-  <div class="text-vertical-center">
-    <h1>Lerne Italienisch,</h1>
-    <h3>die Sprache der Lebensfreude!</h3>
-    <br>
-    <a href="#about" class="btn btn-dark btn-lg">Mehr Infos</a>
-  </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/lib/jquery.vide.js"></script>
+	<script src="js/lib/jquery.waypoints.min.js"></script>
+
+
+	<div id="waypoint1"></div>
+		<div id="videoheader">
+			<div class="text-vertical-center">
+    			<h1>Lerne Italienisch,</h1>
+   					<h3>die Sprache der Lebensfreude!</h3>
+    				<br>
+    					<a href="#about" class="btn btn-dark btn-lg">Mehr Infos</a>
+ 			</div>
+ 		</div>
+	</div>
 </header>
+
+<script>
+		jQuery(document).ready(function($) {
+
+			jQuery('#videoheader').vide({
+				mp4: "video/For_Wes",
+				webm: "video/For_Wes",
+				poster: "video/For_Wes"
+			}, {
+					muted: true,
+					loop: true,
+					autoplay: true,
+					position: "50% 50%",
+					posterType: "detect",
+					resizing: true,
+					bgColor: 'transparent'
+
+			});
+
+
+			var waypoints = $('#waypoint1').waypoint({
+			  handler: function(direction) {
+			    if(jQuery('#header').hasClass('fixed')){
+			    	jQuery('#header').removeClass('fixed').css('position','absolute').css('background-color','transparent');
+			    	jQuery('#headertitle').css('opacity','100');
+			    	jQuery('.logofont').css('display','none');
+		    	}else{
+			    	if(!jQuery('#header').hasClass('fixed')){
+			    		jQuery('#header').addClass('fixed').css('position','fixed').css('background-color','rgba(25, 25, 25, 0.59)');
+			    		jQuery('#headertitle').css('opacity','0');	
+				    	jQuery('.logofont').css('display','block');			    
+		    		}
+		    	}
+			  }
+			});
+		});
+	</script>
